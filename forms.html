@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Odia:wght@600&family=Kanit:ital@1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Odia:wght@600&display=swap" rel="stylesheet">
+</head>
+<style>
+    form::before {
+        content: "";
+        position: absolute;
+        /* background: url('./iiitdmj.jpg') no-repeat center center/cover; */
+        background: url('./iiitdmj.jpg') no-repeat center center/cover;
+        height: 1190px;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.6;
+    }
+
+    form {
+        width: 774px;
+    border-radius: 15px;
+    font-family: 'Anek Odia', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 0px rgb(24 22 22);
+    font-weight: bolder;
+    /* background: linear-gradient(to bottom right, #e0e6e3, #e1e2de); */
+    background: rgba(255, 255, 255, 0.322);
+    /* backdrop-filter: blur(8px); */
+    /* filter: blur(8px); */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 112px 9%;
+
+    }
+
+    form label {
+        padding: 5PX 0PX;
+    }
+
+    #submit {
+        padding: 5PX 0PX;
+        margin: 10PX 0PX;
+        width: 100PX;
+
+
+    }
+
+
+    form div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn {
+        margin: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 100px;
+        height: 50px;
+
+        transition-property: background-color;
+        /* ,border-bottom,border-top,border-left,border-right ; */
+
+        background: linear-gradient(to left, #fefeff 50%, #137fec 50%) right;
+        background-size: 200%;
+        transition: all 0.1s linear;
+        /* border: 0.5px solid #137fec; */
+        border-radius: 5px;
+
+    }
+
+
+    input,
+    select {
+        height: 20px;
+        border: 1px solid rgb(255, 255, 255);
+        padding: 2px;
+        background-color: #ffffff;
+    }
+
+    textarea {
+        border: 0px solid rgb(32, 33, 32);
+        padding: 2px;
+        background-color: #fdfffd;
+
+    }
+
+    .btn:hover {
+        color: white;
+        /* background-color:rgb(41, 110, 172) ; */
+        background-position: left;
+        /* border-top: 5px solid rgb(12, 12, 12); */
+        /* border-left: ; */
+    }
+
+    .lost-or-found-logo img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    footer {
+
+        position: absolute;
+        font-family: 'Anek Odia', sans-serif;
+        top: 1009px;
+        background-color: #43463dac;
+        color: #f0f8ff;
+        text-align: center;
+        /* width: 500px; */
+        height: 178px;
+    }
+
+    .center a {
+        padding: 2px;
+        text-decoration: none;
+        color: #f0f8ff;
+    }
+
+    .center a:hover {
+        color: #87CF8E;
+    }
+
+    .center a img {
+        opacity: 0.7;
+    }
+
+    .center a img:hover {
+        opacity: 1.4;
+        /* padding: 10px; */
+    }
+
+    .phone-directory {
+        display: block;
+
+    }
+
+    .contact-us img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .contact-us {
+        position: absolute;
+        right: 150px;
+        padding: 0px;
+
+    }
+
+    .contact-us p {
+        margin: -10px;
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <h1 id="lost">LostAn<span>dFound</span></h1>
+        <div class="logo-cont">
+            <div class="name">
+                <a href="https://www.iiitdmj.ac.in/about_us.php#">Indian Institute of Information Technology Design &
+                    Manufacturing Jabalpur</a>
+                <p>Dumna Airport Road, Dumna - 482005</p>
+            </div>
+            <img src="iitdmj-logo.jpg" alt="iiitdmj">
+        </div>
+    <div id="form">
+        <form>
+            <div class="lost-or-found-logo">
+                <img src="this.png" alt="">
+            </div>
+            <label for="name">Name</label>
+            <input type="text" name="Name" placeholder="Your name..">
+
+            <label for="email">Email Id</label>
+            <input type="text" name="lastname" placeholder="Your institute email id">
+
+            <label for="Phone Number">Phone Number</label>
+            <input type="text" name="Phone Number" placeholder="Your Phone Number">
+
+            <label for="Date">When did you lose/find?</label>
+            <input type="date" name="Date" placeholder="Date">
+
+
+
+
+            <label>Lost/Found</label>
+            <select name="LOSTandFound">
+                <option value="Found">Found</option>
+                <option value="Lost">Lost</option>
+
+            </select>
+            <label>Upload a file</label>
+            <input type="file" name="upload">
+            <label>Give a complete description of the lost/found item</label>
+            <textarea name="Description" rows="4" cols="50"></textarea>
+            <DIV>
+                <input id="submit" class="btn" type="submit" value="Submit">
+            </DIV>
+        </form>
+    </div>
+    <FOOter>
+        <div class="center">
+            <h1>About Us</h1>
+            <a href="https://www.iiitdmj.ac.in/about_us.php#">Indian Institute of Information Technology Design &
+                Manufacturing Jabalpur</a>
+            <p>Dumna Airport Road, Dumna - 482005</p>
+            <a class="phone-directory"
+                href="https://www.iiitdmj.ac.in/downloads/IIITDMJ%20Telephone%20Directory.pdf">Phone directory</a>
+            <div>
+                <a href="https://twitter.com/iiitdmjbp" target="_blank"> <img
+                        src="https://www.iiitdmj.ac.in/img/twitter-24.png"></a>
+                <a href="https://www.facebook.com/iiitdm.jbp/" target="_blank"> <img
+                        src="https://www.iiitdmj.ac.in/img/facebook-24.png"> </a>
+                <a href="https://www.youtube.com/channel/UCODKL--xMCqXIK31cRdOWOw" target="_blank"> <img
+                        src="https://www.iiitdmj.ac.in/img/youtube-24.png"> </a>
+                <a href="https://www.instagram.com/iiitdm_jabalpur/" target="_blank"><img
+                        src="https://www.iiitdmj.ac.in/img/instagram-24.png"></a>
+            </div>
+        </div>
+        <!-- <div class="CENTER">
+        
+            copywright &copy; www.olnienmeal.com all right reserved.
+        </div> -->
+    </FOOter>
+</body>
+
+</html>

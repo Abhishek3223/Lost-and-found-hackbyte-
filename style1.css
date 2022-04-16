@@ -1,0 +1,306 @@
+* {
+    margin: 0px;
+    /* margin-right: 10px; */
+}
+
+.navbar {
+    font-family: 'Anek Odia', sans-serif;
+
+    display: flex;
+    text-align: center;
+    background-color: rgb(32 30 30 / 31%);
+    height: 80px;
+}
+
+.logo-cont {
+    width: 30%;
+    color: white;
+    /* margin-left: 120px; */
+    position: absolute;
+    right: 30px;
+    /* float: left; */
+    top: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    /* display: inline; */
+}
+
+.logo-cont a {
+    padding-right: 8px;
+    text-align: right;
+    display: flex;
+    float: right;
+    /* justify-content: flex-end; */
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #87CF8E;
+}
+
+.logo-cont p {
+    padding-right: 5px;
+    text-align: right;
+
+}
+
+.logo-cont img {
+    /* position:absolute;
+    right: 10px; */
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 4px;
+
+}
+
+#lost {
+    text-shadow: 1px 1px black;
+    padding-left: 25px;
+    display: flex;
+    font-size: 40px;
+    align-items: center;
+    color: rgb(210, 57, 57);
+}
+
+#lost span {
+    text-shadow: 1px 1px black;
+    color: rgb(255, 255, 255);
+
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 100px;
+}
+
+.navbar-content li {
+    color: rgb(255, 253, 253);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-content li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.body::before {
+
+    /* background: url('./isko-try-kar.jpg') no-repeat center center/cover; */
+    background: url('./iiitdmj.jpg') no-repeat center center/cover;
+
+    content: "";
+    position: absolute;
+
+    height: 958px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+.logo-cont {
+    display: flex;
+}
+
+.found {
+    padding-left: 20px;
+
+    grid-area: ar1;
+}
+
+.lost {
+    grid-area: ar2;
+    padding-left: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    display: flex;
+    font-family: 'Exo 2', sans-serif;
+    padding-left: 20px;
+}
+
+h1+p {
+    padding: 10px 0px;
+    padding-left: 20px;
+    font-family: 'Vazirmatn', sans-serif;
+    text-align: justify;
+
+
+}
+
+.body-ka-footer {
+    grid-area: ar3;
+    text-align: left;
+    padding-left: 42px;
+
+}
+
+.contact {
+    padding: 10px 10px
+}
+
+.emergency {
+    /* margin-right: 10px; */
+    border-radius: 10px;
+    /* margin-right: 10px; */
+    grid-area: ar4;
+}
+
+
+.body-cont {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 185px;
+    left: 0px;
+    display: grid;
+
+    grid-gap: 20px;
+    /* justify-content: center;  */
+    /* align-items: center; */
+    grid-template-areas:
+        'ar1 ar1 ar1 ar1 ar4 ar4'
+        'ar2 ar2 ar2 ar2 ar4 ar4'
+        'ar3 ar3 ar3 ar3 ar4 ar4'
+
+    ;
+}
+
+.emergency {
+    opacity: 0.8;
+    background-color: white;
+    font-family: 'Anek Odia', sans-serif;
+    margin-right: 35px;
+    /* padding: 5px; */
+}
+
+.emergency1 {
+    padding: 5px;
+}
+
+.emergency div {
+    font-size: 30px;
+    border-top: 5px solid black;
+    border-bottom: 2px solid grey;
+    padding: 4PX;
+
+}
+
+.emergency p {
+    padding-left: 20px;
+    display: flex;
+    border-radius: 0.5px solid grey;
+}
+
+.emergency a {
+    text-decoration: none;
+    color: black;
+}
+
+.emergency a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.emergency p {
+
+    font-weight: 100;
+    font-size: 20px;
+
+}
+
+#report {
+    margin-left: 312px;
+    /* margin: 200px; */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 425px;
+    height: 50px;
+    transition-property: background-color;
+    background: linear-gradient(to left, #fefeff 50%, #16609c 50%) right;
+    background-size: 200%;
+    transition: all 0.3s linear;
+    /* border: 0.5px solid #137fec; */
+    border-radius: 5px;
+    color: black;
+
+}
+
+#report:hover {
+    color: white;
+
+    background-position: left;
+
+}
+
+.contact p a{
+    color: black;
+    text-decoration: none;
+}
+footer {
+    position:absolute;
+    top: 781px;
+    font-family: 'Anek Odia', sans-serif;
+    background-color: #43463dac;
+    color: #f0f8ff;
+    text-align: center;
+    /* width: 500px; */
+    height: 178px;
+    width: 100%;
+}
+.center a {
+    padding: 2px;
+    text-decoration: none;
+    color: #f0f8ff;
+}
+.center h1{
+    margin-left: 43vw;
+}
+.center a:hover {
+    color: #87CF8E;
+}
+
+.center a img {
+    opacity: 0.7;
+}
+
+.center a img:hover {
+    opacity: 1.4;
+    /* padding: 10px; */
+}
+.phone-directory {
+    display: block;
+
+}
+
+.contact-us img {
+    width: 100px;
+    height: 100px;
+}
+
+.contact-us {
+    position: absolute;
+    right: 150px;
+    padding: 0px;
+
+}
+
+.contact-us p {
+    margin: -10px;
+}
+ 
